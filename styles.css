@@ -1,7 +1,8 @@
+/* CSS file remains unchanged from previous version */
 :root{
   --bg:#0f1020; --card:#0f1724; --accent1:#7c5cff; --accent2:#00d4ff; --glass: rgba(255,255,255,0.04);
   --text:#e6eef8; --muted:#9fb0c8; --glow: 0 8px 30px rgba(124,92,255,0.15); --glass-border: rgba(255,255,255,0.06);
-  --radius:16px; font-family: 'Segoe UI', Tahoma, system-ui, -apple-system, 'Noto Naskh Arabic', 'Noto Sans', sans-serif;
+  --radius:16px; font-family: 'Segoe UI', Tahoma, system-ui, -apple-system, 'Noto Sans', sans-serif;
 }
 *{box-sizing:border-box} html,body{height:100%} body{margin:0;background: radial-gradient(1200px 600px at 10% 10%, rgba(124,92,255,0.12), transparent), radial-gradient(900px 400px at 90% 90%, rgba(0,212,255,0.06), transparent),var(--bg);color:var(--text);-webkit-font-smoothing:antialiased}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}

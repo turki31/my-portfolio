@@ -1,7 +1,7 @@
-// تحديث السنة تلقائياً
+// Update year automatically
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// تأثير صغير عند الضغط على أزرار العرض (مثال)
+// Button click effect
 document.querySelectorAll('.icon-btn').forEach(b=>{
   b.addEventListener('click', e=>{
     if(b.getAttribute('href').startsWith('#')){
@@ -10,9 +10,9 @@ document.querySelectorAll('.icon-btn').forEach(b=>{
       setTimeout(()=>b.style.transform='',220);
     }
   })
-})
+});
 
-// lazy reveal
+// Lazy reveal for projects and skills
 const observer = new IntersectionObserver((entries)=>{
   entries.forEach(ent=>{
     if(ent.isIntersecting) ent.target.style.transform='translateY(0)';
@@ -23,5 +23,3 @@ document.querySelectorAll('.project, .skill-badge').forEach(el=>{
   el.style.transition='transform .5s cubic-bezier(.2,.9,.3,1)';
   observer.observe(el);
 });
-
-// (اختياري) يمكنك تفعيل خلفية جزيئات بخطوط بسيطة داخل هذا الملف
